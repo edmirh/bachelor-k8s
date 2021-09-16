@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-configmap
+  labels:
+    app: node-app
+data:
+  DB_USERNAME: "postgres"
+  DB_PASSWORD: <DB_PASSWORD>
+  DB_HOST: <DB_HOST>
+  DB_DIALECT: "postgres"
+  DB_TEST: "bacholer_database"
+  NODE_ENV: "test"
+  PORT: 8080
